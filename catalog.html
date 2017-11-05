@@ -2,129 +2,144 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Каталог Нердс</title>
   </head>
   <body>
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a href="index.html" class="main-header-logo">
           <img src="" width="" height="" alt="logo">
         </a>
         <ul>
           <li><a href="studio.html">студия</a></li>
           <li><a href="clients.html">клиенты</a></li>
-          <li class="site-navigation-current"><a href="nerds-catalog.psd">магазин</a></li>
+          <li class="site-navigation-current"><a href="nerds-catalog.html">магазин</a></li>
           <li><a href="contacts">контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="basket-link">корзина</li>
+          <li><a href="#" class="basket-link">корзина</a></li>
         </ul>
       </nav>
-      <h1>
-        <p>Магазин готовых шаблонов</p>
-      </h1>
+      <h1>Магазин готовых шаблонов</h1>
+
     </header>
 
-    <main>
-      <section class="block-filters">
-        <h2 class="visually-hidden"></h2>
-        <!-- форма фильтра-->
+    <main class="main-catalog-content">
+      <section class="filters">
+        <h2 class="visually-hidden">Стоимость</h2>
+        <!--фильтр-->
+        <form>
+          <fieldset class="circle">
+            <legend>Сетка</legend>
+            <input type="checkbox" name="choose-1" id="choose-1-field" checked>
+            <label for="choose-field">Адаптивная</label>
+
+            <input type="checkbox" name="choose-2" id="choose-2-field">
+            <label for="choose-2-field">Фиксированая</label>
+
+            <input type="checkbox" name="choose-3" id="choose-3-field">
+            <label for="choose-3-field">Резиновая</label>
+          </fieldset>
+
+          <fieldset class="square">
+            <legend>особенности</legend>
+            <input type="checkbox" name="1" id="1" checked>
+            <label for="1"></label>
+
+            <input type="checkbox" name="2" id="2">
+            <label for="2"></label>
+
+            <input type="checkbox" name="3" id="3" checked>
+            <label for="3"></label>
+
+            <input type="checkbox" name="4" id="4">
+            <label for="4"></label>
+
+            <input type="checkbox" name="5" id="5">
+            <label for="5"></label>
+
+            <input type="submit" value="Показать">
+          </fieldset>
+        </form>
       </section>
 
       <section class="block-maket">
         <h2 class="visually-hidden">Список макетов</h2>
         <h3 class="filter">сортировать:</h3>
 
-        <ul class="breadcrumbs">
+        <ul class="filter">
           <li><a href="#">по цене</a></li>
           <li><a href="#">по типу</a></li>
           <li><a href="#">по названию</a></li>
-          <li><a  href="#" >вниз</a></li>
-          <li><a  href="#" >ввех</a></li>
+          <li><a href="#" class="arrow des">вниз</a></li>
+          <li><a href="#" class="arrow asc">ввех</a></li>
         </ul>
 
 
-        <ul>
-          <li class="block-item">
-            <div class="maket sedona">
-
-              <img src="" width="" height="" alt="sedona">
+        <section class="gallery">
+          <h2 class="visually-hidden">Список макетов</h2>
+          <article class="sedona">
+            <img src="" width="" height="" alt="sedona">
               <div class="catalog-pop-up">
                 <h2>sedona</h2>
                 <p>Информационный сайт для туристов</p>
                 <a class="button" href="basket-link" >9 900 <span class="catalog-price">руб<span></a>
               </div>
-            </div>
-          </li>
+          </article>
 
 
-          <li class="block-item">
-            <div class="maket pink">
-
-              <img src="" width="" height="" alt="pink">
+          <article class="pink">
+            <img src="" width="" height="" alt="pink">
               <div class="catalog-pop-up">
                 <h2>pink</h2>
                 <p>Сайт магазина мобильных приложений</p>
                 <a class="button" href="basket-link" >9 900 <span class="catalog-price">руб<span></a>
               </div>
-            </div>
-          </li>
+          </article>
 
-          <li class="block-item">
-            <div class="maket barbershop">
-
-              <img src="" width="" height="" alt="barbershop">
+          <article class="barbershop"?
+            <img src="" width="" height="" alt="barbershop">
               <div class="catalog-pop-up">
                 <h2>barbershop</h2>
                 <p>Сайт стрижки волос и бороды</p>
                 <a class="button" href="basket-link" >9 900 <span class="catalog-price">руб<span></a>
               </div>
-            </div>
-          </li>
+          </article>
 
-          <li class="block-item">
-            <div class="maket mishka">
-
-              <img src="" width="" height="" alt="mishka">
+          <article class="mishka">
+            <img src="" width="" height="" alt="mishka">
               <div class="catalog-pop-up">
                 <h2>mishka</h2>
                 <p>Сайт для hand-maid</p>
                 <a class="button" href="basket-link" >9 900 <span class="catalog-price">руб<span></a>
               </div>
-            </div>
-          </li>
+          </article>
 
-          <li class="block-item">
-            <div class="maket academy">
-
-              <img src="" width="" height="" alt="academy">
+          <article class="academy">
+            <img src="" width="" height="" alt="academy">
               <div class="catalog-pop-up">
                 <h2>academy</h2>
                 <p>Курсы по верстке</p>
                 <a class="button" href="basket-link" >9 900 <span class="catalog-price">руб<span></a>
               </div>
-            </div>
-          </li>
+          </article>
 
-          <li class="block-item">
-            <div class="maket kvast">
-
-              <img src="" width="" height="" alt="kvast">
+          <article class="kvast">
+            <img src="" width="" height="" alt="kvast">
               <div class="catalog-pop-up">
                 <h2>kvast</h2>
                 <p>Крафтовый квас</p>
                 <a class="button" href="basket-link" >9 900 <span class="catalog-price">руб<span></a>
               </div>
-            </div>
-          </li>
-        </ul>
+          </article>
+        </section>
 
-        <ul class="pagination-list">
+        <ul class="pagination">
           <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#next">следующая</a></li>
+          <li class="pagination-item pagination-next"><a href="#next">следующая</a></li>
         </ul>
 
 
@@ -133,17 +148,19 @@
 
     </main>
 
-  <footer>
-    <div class="footer-social">
-      <ul>
-        <li><a class="social-button" href="#"></a>Вконтакте</li>
-        <li><a class="social-button" href="#"></a>Фейсбук</li>
-        <li><a class="social-button" href="#"></a>Инстограмм</li>
+    <footer class="main-footer">
+      <ul class="footer-social">
+        <li><a class="social-button" href=""></a>Вконтакте</li>
+        <li><a class="social-button" href=""></a>Фейсбук</li>
+        <li><a class="social-button" href=""></a>Инстограмм</li>
       </ul>
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей</p>
-    </div>
-  </footer>
+      <div class="sale">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
+    </footer>
+
+
 
   </body>
 </html>
