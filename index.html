@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Главная страница нердс</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/nerds.css" rel="stylesheet">
   </head>
   <body>
 
@@ -13,14 +16,14 @@
         <a class="main-header-logo">
           <img src="img/nerds-logo.png" width="" height="" alt="logo">
         </a>
-        <ul>
+        <ul class="navigation">
           <li><a href="studio.html">студия</a></li>
           <li><a href="clients.html">клиенты</a></li>
-          <li><a href="shop.html">магазин</a></li>
+          <li><a href="catalog.html">магазин</a></li>
           <li><a href="contacts">контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="#" class="basket-link">корзина</a></li>
+          <li><a href="#" class="basket-link"><img src="img/cart-icon.svg">корзина</a></li>
         </ul>
       </nav>
 
@@ -66,19 +69,22 @@
           <li class="main-menu-item">
             <h3>веб-сайты</h3>
               <img src="img/illustration-1.jpg" width="" height="" alt="illustration">
-              <a class="button main-menu-order" href="">заказать</a>
+              <a class="button main-menu-order-1" href="">заказать</a>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           </li>
 
           <li class="main-menu-item">
             <h3>приложения</h3>
               <img src="img/illustration-2.jpg" width="" height="" alt="illustration">
-              <a class="button main-menu-order" href="">заказать</a>
+              <a class="button main-menu-order-2" href="">заказать</a>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           </li>
 
           <li class="main-menu-item">
             <h3>презентации</h3>
               <img src="img/illustration-3.jpg" width="" height="" alt="illustration">
-              <a class="button main-menu-order" href="">заказать</a>
+              <a class="button main-menu-order-3" href="">заказать</a>
+              <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
           </li>
 
         </ul>
@@ -87,7 +93,7 @@
 
 
         <section class="about-us">
-          <p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как робаты </p>
           <div class="left-column">
             <h2>Выполняем заказы на разработку:</h2>
@@ -100,7 +106,7 @@
         </section>
 
         <div class="right-column">
-          <div class="company-logo"><img src="" alt="logo"><div>
+          <div class="company-logo"><img src="img/nerds-illustration.jpg" alt="logo"><div>
           <h3>с 2004 года любим точность во всем:</h3>
           <table>
            <tr>
@@ -117,16 +123,16 @@
         </div>
 
       <section class="projects">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="logo-1" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-1.png" width="" height="" alt="html">
         </a>
-        <a href="">
+        <a href="#" class="logo-2">
           <img src="img/logo-2.png" width="" height="" alt="barbershop">
         </a>
-        <a href="">
+        <a href="#" class="logo-3">
           <img src="img/logo-3.png" width="" height="" alt="pink">
         </a>
-        <a href="">
+        <a href="#" class="logo-4">
           <img src="img/logo-4.png" width="" height="" alt="mishka">
         </a>
       </section>
@@ -147,9 +153,9 @@
 
     <footer class="main-footer">
       <ul class="footer-social">
-        <li><a class="social-button" href="#"></a>Вконтакте</li>
-        <li><a class="social-button" href="#"></a>Фейсбук</li>
-        <li><a class="social-button" href="#"></a>Инстограмм</li>
+        <li><a class="social social-vk" href="#"><img src="img/vk-icon.svg"></a>Вконтакте</li>
+        <li><a class="social social-fb" href="#"><img src="img/fb-icon.svg"></a>Фейсбук</li>
+        <li><a class="social social-inst" href="#"><img src="img/insta-icon.svg"></a>Инстограмм</li>
       </ul>
       <div class="sale">
         <b>Давайте дружить, это выгодно!</b>
@@ -160,10 +166,10 @@
 
     <div class="main-pop-up">
       <h3>Напишите нам</h3>
-      <button aria-label="close-pop up" type="button">X</button>
+      <button aria-label="close-pop-up" type="button">X</button>
       <form class="pop-up write-us" action="" method="post">
         <label for="name-field">Ваше имя:</label>
-        <input type="text" id="name-field" name="name-field" placeholder="Представьтесь, пожалуйста">
+        <input type="text" id="name-field" name="name-field" placeholder="Представьтесь, пожалуйста" required>
 
         <label for="e-mail-field">Ваш e-mail:</label>
         <input type="text" id="e-mail-field" name="e-mail-field" placeholder="для отправки ответа">
