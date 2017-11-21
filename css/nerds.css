@@ -161,14 +161,18 @@ textarea{
 
 .social:link{
   background-color: #e1e1e1;
+
 }
 
 .social:hover{
   background-color: #e74246;
+
 }
 
 .social:active{
   background-color: #d7373b;
+
+
 }
 
 .sale b{
@@ -286,25 +290,27 @@ textarea{
 }
 
 
-.logo-1:link,
-.logo-2:link,
-.logo-3:link,
-.logo-4:link{
+.logo:link,
+.logo :link,
+.logo:link,
+.logo:link,
+.logo:link,
+.logo:link{
   opacity: 0.6;
 }
 
 
-.logo-1:hover,
-.logo-2:hover,
-.logo-3:hover,
-.logo-4:hover{
+.logo:hover,
+.logo:hover,
+.logo:hover,
+.logo:hover{
   opacity: 1;
 }
 
-.logo-1:active,
-.logo-2:active,
-.logo-3:active,
-.logo-4:active{
+.logo:active,
+.logo:active,
+.logo:active,
+.logo:active{
   opacity: 0.3;
 }
 
@@ -497,6 +503,7 @@ input[type="submit"]:active{
   color: #a9a9a9;
   border-top: 3px solid #bfbfbf;
 }
+
 
 
 a:link { ... }
