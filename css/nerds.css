@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Roboto',  sans-serif;
+  font-family: 'Roboto', arial,  sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -374,21 +374,21 @@ input[type="text"]:invalid::-webkit-input-placeholder{
   color: #283136;
 }
 
-input[type="submit"]:link{
+.square input[type="submit"]:link{
   background-color: #eeeeee;
   color: #000000;
   text-align: center;
   vertical-align: middle;
 }
 
-input[type="submit"]:hover{
+.square input[type="submit"]:hover{
   background-color: #dfdfdf;
   color: #000000;
   text-align: center;
   vertical-align: middle;
 }
 
-input[type="submit"]:active{
+.square input[type="submit"]:active{
   background-color: #d5d5d5;
   color: #a9a9a9;
   text-align: center;
@@ -510,3 +510,140 @@ a:link { ... }
 a:visited { ... }
 a:hover { ... }
 a:active { ... }
+
+/*              Строим сетки     */
+.main-header{
+  outline: 1px solid red;
+  width: auto;
+  min-height: 545px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+ .main-navigation{
+  outline: 1px solid red;
+  width: 1160px;
+  min-height: 80px;
+}
+
+.navigation{
+  margin: 0px;
+  padding: 0px;
+  outline: 1px solid red;
+  width: 560px;
+  height: 80px;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-navigation{
+  display: flex;
+  align-items: center;
+  outline: 1px solid red;
+  width: 160px;
+  height: 80px;
+  margin: 0px;
+  margin-left: auto;
+
+}
+
+.main-navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.main-header-logo{
+  outline: 1px solid red;
+  width: 160px;
+  height: 80px;
+  margin-right: 175px;
+}
+
+.menu-list{
+  outline: 1px solid red;
+  margin: 0px;
+  padding: 0px;
+  width: 1100px;
+  min-height: 360px;
+  margin-left: 10px;
+}
+
+.main-menu-item{
+  width: 300px;
+  min-height: 350px;
+}
+
+.menu-list{
+  display:flex;
+  justify-content: space-between;
+}
+
+.projects{
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid red;
+  width: 1160px;
+  min-height: 90px;
+}
+
+.modal .modal-map{
+  width: 1440px;
+  min-height: 415px;
+  outline: 1px solid red
+}
+
+.main-footer{
+  width: 1440px;
+  min-height: 217px;
+  outline: 1px solid red
+}
+
+.main-footer{
+  display: flex;
+}
+
+.footer-social{
+  outline: 1px solid red;
+  width: 280px;
+  min-height: 100px;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 60px;
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+}
+
+.sale{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sale{
+  outline: 1px solid red;
+  margin: 0px;
+  padding: 0px;
+  width:560px;
+  min-height: 100px
+}
+
+.write-to-us{
+  outline: 1px solid red;
+  width: 320px;
+  min-height: 310px;
+}
+
+.main-pop-up{
+  outline: 1px solid red;
+  width: 960px;
+  min-height: 590px;
+}
