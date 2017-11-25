@@ -1,3 +1,10 @@
+html{
+  box-sizing: border-box;
+}
+*,*::before,*::after{
+  box-sizing: inherit;
+
+}
 body{
   margin: 0;
   padding: 0;
@@ -10,6 +17,12 @@ body{
 
 .main-header{
   background-color: #eeeeee;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  box-sizing: content-box;
 }
 
 a{
@@ -201,9 +214,12 @@ textarea{
 
 .social:active{
   background-color: #d7373b;
-
-
 }
+
+.sale{
+  outline: 1px solid red;
+}
+
 
 .sale b{
   font-weight: bold;
@@ -545,7 +561,7 @@ a:active { ... }
 .main-header{
   outline: 1px solid red;
   width: auto;
-  min-height: 350px;
+  min-height: 545px;
   margin-bottom: 60px;
 }
 
@@ -629,10 +645,11 @@ a:active { ... }
 }
 
 .main-footer{
-  width: 1440px;
+  width: auto;
   min-height: 217px;
   outline: 1px solid red
 }
+
 
 .main-footer{
   display: flex;
@@ -662,6 +679,7 @@ a:active { ... }
   outline: 1px solid red;
   width: 960px;
   min-height: 590px;
+  margin: auto;
 }
 
 .shop{
@@ -760,7 +778,11 @@ a:active { ... }
 }
 
 .container{
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.about-us-block{
+  display: flex;
 }
