@@ -10,6 +10,7 @@
   <body>
 
     <header class="main-header">
+      <div class="container">
 
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
@@ -25,7 +26,8 @@
           <li><a href="#" class="basket-link"><img src="img/cart-icon.svg">корзина</a></li>
         </ul>
       </nav>
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="shop">Магазин готовых шаблонов</h1>
+    </div>
 
     </header>
 
@@ -36,32 +38,49 @@
         <form action="" method="get" class="form">
           <fieldset class="circle">
             <legend>Сетка:</legend>
-            <input type="checkbox" name="choose-1" id="choose-1-field" disabled>
-            <label for="choose-field">Адаптивная</label>
+            <label for="choose-field">
+              <input type="checkbox" name="choose-1" id="choose-1-field" disabled>
+              Адаптивная
+            </label>
 
-            <input type="checkbox" name="choose-2" id="choose-2-field">
-            <label for="choose-field-2">Фиксированая</label>
+            <label for="choose-field-2">
+              <input type="checkbox" name="choose-2" id="choose-2-field">
+              Фиксированая
+            </label>
 
-            <input type="checkbox" name="choose-3" id="choose-3-field">
-            <label for="choose-field-3">Резиновая</label>
+
+            <label for="choose-field-3">
+              <input type="checkbox" name="choose-3" id="choose-3-field">
+              Резиновая
+            </label>
           </fieldset>
 
           <fieldset class="square">
             <legend>особенности:</legend>
-            <input type="checkbox" name="1" id="1" disabled>
-            <label for="1">Слайдер</label>
+            <label for="1">
+              <input type="checkbox" name="1" id="1" disabled>
+              Слайдер
+            </label>
 
-            <input type="checkbox" name="2" id="2">
-            <label for="2">Блок преимуществ</label>
+            <label for="2">
+              <input type="checkbox" name="2" id="2">
+              Блок преимуществ
+            </label>
 
-            <input type="checkbox" name="3" id="3" checked>
-            <label for="3">Новости</label>
+            <label for="3">
+              <input type="checkbox" name="3" id="3" checked>
+              Новости
+            </label>
 
-            <input type="checkbox" name="4" id="4">
-            <label for="4">Галерея</label>
+            <label for="4">
+              <input type="checkbox" name="4" id="4">
+              Галерея
+            </label>
 
-            <input type="checkbox" name="5" id="5">
-            <label for="5">Корзина</label>
+            <label for="5">
+              <input type="checkbox" name="5" id="5">
+              Корзина
+            </label>
 
             <input type="submit" value="Показать">
           </fieldset>
@@ -70,19 +89,18 @@
 
       <section class="block-maket">
         <h2 class="visually-hidden">Список макетов</h2>
-        <h3 class="filter">сортировать:</h3>
-
-        <ul class="filter-type">
-          <li><a href="catalog">по цене</a></li>
-          <li><a href="type">по типу</a></li>
-          <li><a href="name">по названию</a></li>
-          <li><a href="#" class="arrow des">вниз</a></li>
-          <li><a href="#" class="arrow asc">ввех</a></li>
-        </ul>
+          <ul class="filter-type">
+            <h3 class="filter">сортировать:</h3>
+            <li><a href="catalog">по цене</a></li>
+            <li><a href="type">по типу</a></li>
+            <li><a href="name">по названию</a></li>
+            <li><a href="#" class="arrow des">вниз</a></li>
+            <li><a href="#" class="arrow asc">вверх</a></li>
+          </ul>
 
 
         <section class="gallery">
-          <h2 class="visually-hidden">Список макетов</h2>
+
           <article class="maket sedona">
             <img src="img/img-sedona.jpg" width="" height="" alt="sedona">
               <div class="catalog-pop-up">
@@ -162,9 +180,11 @@
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
+
     </footer>
 
-    <div class="makets"></div>
+
+
 
 
   </body>
