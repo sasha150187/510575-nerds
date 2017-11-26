@@ -659,6 +659,7 @@ a:active { ... }
 }
 
 .footer-social{
+  outline: 1px solid red;
   display: flex;
   margin-right: auto;
   flex-grow: 1;
