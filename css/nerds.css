@@ -1,10 +1,12 @@
 html{
   box-sizing: border-box;
 }
+
 *,*::before,*::after{
   box-sizing: inherit;
 
 }
+
 body{
   margin: 0;
   padding: 0;
@@ -28,6 +30,7 @@ img{
 a{
   text-decoration: none;
 }
+
 
 .main-navigation a{
   font-weight:normal;
@@ -404,6 +407,7 @@ input[type="text"]:invalid::-webkit-input-placeholder{
   text-transform: uppercase;
   font-weight: bold;
   color: #000000;
+  margin: 0;
 }
 
 .filters legend{
@@ -613,11 +617,8 @@ a:active { ... }
 
 .menu-list{
   outline: 1px solid red;
-  margin: 0px;
-  padding: 0px;
-  width: 1100px;
-  min-height: 360px;
-  margin-left: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-menu-item{
@@ -686,14 +687,9 @@ a:active { ... }
   padding: 90px 200px 110px 200px;
 }
 
-.main-catalog-content{
-  display: flex;
-}
 
 .filters{
   width: 260px;
-  min-height: 780px;
-  margin-right: 140px;
 }
 
 
@@ -735,36 +731,34 @@ a:active { ... }
 }
 
 .maket{
+  width: 360px;
   margin: 0px;
   padding: 0px;
   outline: 1px solid red;
 }
 
-.filter-type{
-  width: 760px;
-  min-height: 18px;
-  outline: 1px solid red;
-  margin: 0px;
-  padding: 0px;
-}
 
 .filter-type{
   display: flex;
   justify-content: space-between;
+  margin: 0;
   margin-left: auto;
   align-items: flex-end;
   align-items: center;
   outline: 1px solid red;
+  padding-left: 0;
 }
 
-.pagination{
-  width: 445px;
-  min-height: 55px
-}
+
 
 .pagination{
   display: flex;
-  justify-content: space-around;
+  width: 445px;
+  padding-left: 0;
+}
+
+.pagination li:not(:last-child){
+  margin-right: 10px;
 }
 
 .visually-hidden{
@@ -772,10 +766,6 @@ a:active { ... }
   position: absolute;
 }
 
-.filter{
-  outline: 1px solid red;
-  margin-right: 260px;
-}
 
 .container{
   width: 1200px;
@@ -785,4 +775,39 @@ a:active { ... }
 
 .about-us-block{
   display: flex;
+}
+
+.slide .slider-slide-1{
+  display: flex;
+}
+
+
+.main-catalog-content .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-maket{
+  width: 760px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sorting{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.sorting > span{
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 0;
 }
