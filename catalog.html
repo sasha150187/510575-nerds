@@ -11,33 +11,47 @@
 
     <header class="main-header">
       <div class="container">
-
-      <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img src="img/nerds-logo.png" width="" height="" alt="logo">
-        </a>
-        <ul class="navigation">
-          <li><a href="studio.html">студия</a></li>
-          <li><a href="clients.html">клиенты</a></li>
-          <li class="site-navigation-current"><a href="nerds-catalog.html">магазин</a></li>
-          <li><a href="contacts">контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="#" class="basket-link"><img src="img/cart-icon.svg">корзина</a></li>
-        </ul>
-      </nav>
-      <h1 class="shop">Магазин готовых шаблонов</h1>
-    </div>
-
+        <nav class="main-navigation">
+          <a href="index.html" class="main-header-logo">
+            <img src="img/nerds-logo.png" width="" height="" alt="logo">
+          </a>
+          <ul class="navigation">
+            <li><a href="studio.html">студия</a></li>
+            <li><a href="clients.html">клиенты</a></li>
+            <li class="site-navigation-current"><a href="nerds-catalog.html">магазин</a></li>
+            <li><a href="contacts">контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li><a href="#" class="basket-link"><img src="">корзина</a></li>
+          </ul>
+        </nav>
+        <h1 class="shop">Магазин готовых шаблонов</h1>
+      </div>
     </header>
 
 
-      <main class="main-catalog-content">
-          <div class="container">
+    <main class="main-catalog-content">
+      <div class="container">
         <section class="filters">
-          <h2>Стоимость:</h2>
-        <!--фильтр-->
-          <form action="" method="get" class="form">
+          <form action="https://echo.htmlacademy.ru" method="get" class="form">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar style="margin-left: 20%; width: 30%""></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+
+              </div>
+            </fieldset>
+
             <fieldset class="circle">
               <legend>Сетка:</legend>
               <label for="choose-field">
@@ -89,75 +103,73 @@
           </form>
         </section>
 
-      <section class="block-maket">
-        <h2 class="visually-hidden">Список макетов</h2>
-        <div class="sorting">
-        <span>сортировать:</span>
-          <ul class="filter-type">
-            <li><a href="catalog">по цене</a></li>
-            <li><a href="type">по типу</a></li>
-            <li><a href="name">по названию</a></li>
-            <li><a href="#" class="arrow des">вниз</a></li>
-            <li><a href="#" class="arrow asc">вверх</a></li>
-          </ul>
+        <section class="block-maket">
+          <h2 class="visually-hidden">Список макетов</h2>
+          <div class="sorting">
+            <span>сортировать:</span>
+            <ul class="filter-type">
+              <li><a href="catalog">по цене</a></li>
+              <li><a href="type">по типу</a></li>
+              <li><a href="name">по названию</a></li>
+              <li><a href="#" class="arrow des"></a></li>
+              <li><a href="#" class="arrow asc"></a></li>
+            </ul>
           </div>
 
 
+        <article class="maket sedona">
+          <img src="img/img-sedona.jpg" width="" height="" alt="sedona">
+          <div class="catalog-pop-up">
+            <h2>sedona</h2>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+          </div>
+        </article>
 
-          <article class="maket sedona">
-            <img src="img/img-sedona.jpg" width="" height="" alt="sedona">
-              <div class="catalog-pop-up">
-                <h2>sedona</h2>
-                <p>Информационный сайт для туристов</p>
-                <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
-              </div>
-          </article>
+        <article class="maket pink">
+          <img src="img/img-pink.jpg" width="" height="" alt="pink">
+          <div class="catalog-pop-up">
+            <h2>pink</h2>
+            <p>Сайт магазина мобильных приложений</p>
+            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+          </div>
+        </article>
 
+        <article class="maket barbershop">
+          <img src="img/img-barbershop.jpg" width="" height="" alt="barbershop">
+          <div class="catalog-pop-up">
+            <h2>barbershop</h2>
+            <p>Сайт стрижки волос и бороды</p>
+            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+          </div>
+        </article>
 
-          <article class="maket pink">
-            <img src="img/img-pink.jpg" width="" height="" alt="pink">
-              <div class="catalog-pop-up">
-                <h2>pink</h2>
-                <p>Сайт магазина мобильных приложений</p>
-                <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
-              </div>
-          </article>
+        <article class="maket mishka">
+          <img src="img/img-mishka.jpg" width="" height="" alt="mishka">
+          <div class="catalog-pop-up">
+            <h2>mishka</h2>
+            <p>Сайт для hand-maid</p>
+            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+          </div>
+        </article>
 
-          <article class="maket barbershop">
-            <img src="img/img-barbershop.jpg" width="" height="" alt="barbershop">
-              <div class="catalog-pop-up">
-                <h2>barbershop</h2>
-                <p>Сайт стрижки волос и бороды</p>
-                <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
-              </div>
-          </article>
+        <article class="maket academy">
+          <img src="img/img-aplus.jpg" width="" height="" alt="aplus">
+          <div class="catalog-pop-up">
+            <h2>academy</h2>
+            <p>Курсы по верстке</p>
+            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+          </div>
+        </article>
 
-          <article class="maket mishka">
-            <img src="img/img-mishka.jpg" width="" height="" alt="mishka">
-              <div class="catalog-pop-up">
-                <h2>mishka</h2>
-                <p>Сайт для hand-maid</p>
-                <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
-              </div>
-          </article>
-
-          <article class="maket academy">
-            <img src="img/img-aplus.jpg" width="" height="" alt="aplus">
-              <div class="catalog-pop-up">
-                <h2>academy</h2>
-                <p>Курсы по верстке</p>
-                <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
-              </div>
-          </article>
-
-          <article class="maket kvast">
-            <img src="img/img-kvast.jpg" width="" height="" alt="kvast">
-              <div class="catalog-pop-up">
-                <h2>kvast</h2>
-                <p>Крафтовый квас</p>
-                <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
-              </div>
-          </article>
+        <article class="maket kvast">
+          <img src="img/img-kvast.jpg" width="" height="" alt="kvast">
+          <div class="catalog-pop-up">
+            <h2>kvast</h2>
+            <p>Крафтовый квас</p>
+            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+          </div>
+        </article>
 
 
         <ul class="pagination">
@@ -167,14 +179,12 @@
           <li class="pagination-item pagination-next"><a href="#next">следующая</a></li>
         </ul>
 
-
-
-      </section>
-        </div>
+        </section>
+      </div>
     </main>
 
     <div class="container">
-    <footer class="main-footer">
+      <footer class="main-footer">
         <ul class="footer-social">
           <li><a class="social social-vk" href="#"><img src="img/vk-icon.svg"></a>Вконтакте</li>
           <li><a class="social social-fb" href="#"><img src="img/fb-icon.svg"></a>Фейсбук</li>
@@ -186,23 +196,25 @@
         </div>
 
 
-    </footer>
+      </footer>
 
     <div class="main-pop-up">
       <h3>Напишите нам</h3>
-      <button aria-label="close-pop-up" type="button">X</button>
-        <form class="pop-up write-us" action=" https://echo.htmlacademy.ru" method="post">
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" id="name-field" name="name-field" placeholder="Представьтесь, пожалуйста" required>
+      <button aria-label="close-pop-up" type="button">
+        X
+      </button>
+      <form class="pop-up write-us" action=" https://echo.htmlacademy.ru" method="post">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" id="name-field" name="name-field" placeholder="Представьтесь, пожалуйста" required>
 
-          <label for="e-mail-field">Ваш e-mail:</label>
-          <input type="text" id="e-mail-field" name="e-mail-field" placeholder="для отправки ответа">
+        <label for="e-mail-field">Ваш e-mail:</label>
+        <input type="text" id="e-mail-field" name="e-mail-field" placeholder="для отправки ответа">
 
 
-          <label for="letter-field">Текст письма:</label>
-          <textarea name="letter"  id="letter-field" rows="" placeholder="В свободной форме"></textarea>
-          <input type="submit" value="Отправить" class="button">
-        </form>
+        <label for="letter-field">Текст письма:</label>
+        <textarea name="letter"  id="letter-field" rows="" placeholder="В свободной форме"></textarea>
+        <input type="submit" value="Отправить" class="button">
+      </form>
     </div>
     </div>
 
