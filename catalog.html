@@ -55,50 +55,50 @@
             <fieldset class="circle">
               <legend>Сетка:</legend>
               <label for="choose-field">
-                <input type="checkbox" name="choose-1" id="choose-1-field" disabled>
+                <input type="radio" class="radio" name="choose-1" id="choose-1-field">
                 Адаптивная
               </label>
 
-              <label for="choose-field-2">
-                <input type="checkbox" name="choose-2" id="choose-2-field">
+              <label for="choose-field-2" class="unchecked">
+                <input type="radio" class="radio" name="choose-2" id="choose-2-field">
                 Фиксированая
               </label>
 
 
-              <label for="choose-field-3">
-                <input type="checkbox" name="choose-3" id="choose-3-field">
+              <label for="choose-field-3" class="unchecked-2">
+                <input type="radio" class="radio" name="choose-3" id="choose-3-field" disabled>
                 Резиновая
               </label>
             </fieldset>
 
             <fieldset class="square">
               <legend>особенности:</legend>
-              <label for="1">
+              <label for="1" class="checkbox checkbox-1">
                 <input type="checkbox" name="1" id="1" disabled>
                 Слайдер
               </label>
 
-              <label for="2">
+              <label for="2" class="checkbox checkbox-2">
                 <input type="checkbox" name="2" id="2">
                 Блок преимуществ
               </label>
 
-              <label for="3">
+              <label for="3" class="checkbox checkbox-3">
                 <input type="checkbox" name="3" id="3" checked>
                 Новости
               </label>
 
-              <label for="4">
-                <input type="checkbox" name="4" id="4">
+              <label for="4" class="checkbox checkbox-4">
+                <input type="checkbox" class="checkbox" name="4" id="4">
                 Галерея
               </label>
 
-              <label for="5">
-                <input type="checkbox" name="5" id="5">
+              <label for="5" class="checkbox checkbox-5">
+                <input type="checkbox" class="checkbox" name="5" id="5" disabled>
                 Корзина
               </label>
 
-              <input type="submit" value="Показать">
+              <input type="submit" value="ПОКАЗАТЬ">
             </fieldset>
           </form>
         </section>
@@ -122,7 +122,7 @@
           <div class="catalog-pop-up">
             <h2>sedona</h2>
             <p>Информационный сайт для туристов</p>
-            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+            <a class="button" href="basket-link">9 900. руб</a>
           </div>
         </article>
 
@@ -131,7 +131,7 @@
           <div class="catalog-pop-up">
             <h2>pink</h2>
             <p>Сайт магазина мобильных приложений</p>
-            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+            <a class="button" href="basket-link">9 900. руб</a>
           </div>
         </article>
 
@@ -140,7 +140,7 @@
           <div class="catalog-pop-up">
             <h2>barbershop</h2>
             <p>Сайт стрижки волос и бороды</p>
-            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+            <a class="button" href="basket-link">9 900. руб</a>
           </div>
         </article>
 
@@ -149,7 +149,7 @@
           <div class="catalog-pop-up">
             <h2>mishka</h2>
             <p>Сайт для hand-maid</p>
-            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+            <a class="button" href="basket-link">9 900. руб</a>
           </div>
         </article>
 
@@ -158,7 +158,7 @@
           <div class="catalog-pop-up">
             <h2>academy</h2>
             <p>Курсы по верстке</p>
-            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+            <a class="button" href="basket-link">9 900. руб</a>
           </div>
         </article>
 
@@ -167,7 +167,7 @@
           <div class="catalog-pop-up">
             <h2>kvast</h2>
             <p>Крафтовый квас</p>
-            <a class="button" href="basket-link" >9 900.<span class="catalog-price">руб<span></a>
+            <a class="button" href="basket-link">9 900. руб</a>
           </div>
         </article>
 
@@ -213,10 +213,13 @@
 
         <label for="letter-field">Текст письма:</label>
         <textarea name="letter"  id="letter-field" rows="" placeholder="В свободной форме"></textarea>
-        <input type="submit" value="Отправить" class="button">
+        <input type="submit" value="ОТПРАВИТЬ" class="button">
       </form>
     </div>
     </div>
+
+
+
 
   </body>
 </html>
