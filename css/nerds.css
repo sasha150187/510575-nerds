@@ -32,7 +32,7 @@ a{
 }
 
 .main-navigation a{
-  font-weight:normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -92,7 +92,7 @@ li{
 
 .slide h2{
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .slide p{
@@ -103,7 +103,7 @@ li{
 
 .find-out-more{
   display: inline-block;
-  padding: 16px 53px;
+  padding: 17px 54px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -113,6 +113,7 @@ li{
   color: #ffffff;
   border-radius: 3px;
   border: none;
+  font-weight: 500;
 }
 
 .main-menu-item h3{
@@ -225,13 +226,14 @@ td{
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 16px 45px;
+  padding: 17px 44px;
 }
 
 .write-us-button:link{
   background-color: #fb565a;
   color: #ffffff;
   margin-top: 22px;
+  font-weight: 500;
 }
 
 .write-us-button:hover{
@@ -242,6 +244,7 @@ td{
 .write-us-button:active{
   background-color: #d7373b;
   color: #ffffff;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .main-pop-up h3{
@@ -253,12 +256,6 @@ td{
   margin-bottom: 40px;
 }
 
-label{
-  font-weight: bold;
-  color: #000000;
-  font-size: 16px;
-  line-height: 18px;
-}
 
 textarea{
   color: #d7dcde;
@@ -280,7 +277,8 @@ textarea{
   line-height: 18px;
   text-align: center;
   border: none;
-  margin-top: 47px
+  margin-top: 47px;
+  font-weight: 500;
  }
 
 .pop-up .button:link{
@@ -296,16 +294,27 @@ textarea{
 .pop-up .button:active{
   background-color: #d7373b;
   color: #ffffff;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .social > svg{
   fill: #ffffff;
 }
 
+.sale{
+  flex-grow: 3;
+}
+
 .sale b{
   font-weight: bold;
   font-size: 36px;
+  line-height: 36px;
   color: #000000;
+}
+
+.sale p{
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .pagination-next{
@@ -313,11 +322,6 @@ textarea{
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
-}
-
-.sale p{
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .main-header-logo:link{
@@ -341,7 +345,7 @@ textarea{
 }
 
 .navigation li:not(:last-child){
-  margin-right: 47px;
+  margin-right: 46px;
 }
 
 .site-navigation-current{
@@ -375,9 +379,10 @@ textarea{
 }
 
 .main-menu-item .button{
-  padding: 16px 39px;
+  padding: 14px 39px;
   width: 160px;
   height: 50px;
+  font-weight: 500;
 }
 
 .main-menu-order-1:link{
@@ -525,6 +530,7 @@ input[type="text"]:invalid{
   line-height: 20px;
   color: #283136;
   display: inline-block;
+  font-weight: 500;
 }
 
 .square input[type="submit"]{
@@ -549,10 +555,11 @@ input[type="text"]:invalid{
 
 .square input[type="submit"]{
   display: inline-block;
-  padding: 16px 89px;
+  padding: 17px 88px;
   margin-top: 50px;
   border: none;
   border-radius: 3px;
+  font-weight: 500;
 }
 
 .filter{
@@ -596,11 +603,10 @@ input[type="text"]:invalid{
 .catalog-pop-up{
   position: relative;
   width: 100%;
-  width: 360px;
-  height: 230px;
+  height: 240px;
   text-align: center;
   background-color: #eeeeee;
-  padding: 30px 50px 20px 50px;
+  padding: 26px 50px 20px 50px;
 }
 
 .catalog-pop-up h2{
@@ -619,31 +625,38 @@ input[type="text"]:invalid{
   color: #666666;
   margin: 0;
   padding-bottom: 33px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
-.catalog-pop-up a{
+.order-link{
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   padding: 16px 62px;
   border-radius: 3px;
+  font-weight: 500;
+  margin-bottom: 3px;
 }
 
-.catalog-pop-up a:link{
+.order-link:link{
   background-color: #fb565a;
   color: #ffffff;
 }
 
-.catalog-pop-up a:hover{
+.order-link:hover{
   background-color: #e74246;
   color: #ffffff;
 }
 
-.catalog-pop-up a:active{
+.order-link:active{
   background-color: #d7373b;
   color: #ffffff;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.catalog-pop-up .maket-link{
+  color: #000000;
+  font-weight: 500;
 }
 
 .circle label:link{
@@ -783,14 +796,13 @@ img::after{
 .main-footer p{
   padding: 0;
   margin: 0;
+  padding-top: 10px;
 }
 
 .main-footer{
   width: auto;
   min-height: 217px;
 }
-
-
 
 
 .main-footer{
@@ -803,11 +815,10 @@ img::after{
   position: relative;
   display: flex;
   justify-content: flex-start;
-  width: 260px;
-  flex-grow: 1;
   margin: 0;
   padding: 0;
-  width: 326px;
+  flex-grow: 1;
+  margin-right: 51px;
 }
 
 .social{
@@ -841,10 +852,6 @@ img::after{
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-.sale{
-  flex-grow: 3;
-}
-
 .main-pop-up{
   position: fixed;
   bottom: 180px;
@@ -855,6 +862,7 @@ img::after{
   box-shadow: 0  10px 40px 1px #000000;
   background-color: #ffffff;
   z-index: 3;
+  display: none;
 }
 
 .filters{
@@ -947,13 +955,13 @@ img::after{
 }
 
 .pagination a{
-  display: inline-block;
+  display: block;
   width: 50px;
   height: 50px;
   background-color: #eeeeee;
   text-align: center;
   vertical-align: middle;
-  padding-top: 14px;
+  padding: 14px;
   margin-right: 11px;
   border-radius: 3px;
 }
@@ -974,8 +982,9 @@ img::after{
 }
 
 .pagination-next a{
+  padding-top: 17px;
   min-width: 260px;
-  padding-left: 1px;
+  padding-left: 15px;
 }
 
 .visually-hidden{
@@ -1070,7 +1079,6 @@ img::after{
   justify-content: space-between;
   width: 100%;
   margin-bottom: 48px;
-
 }
 
 .sorting > span{
@@ -1146,13 +1154,17 @@ img::after{
 }
 
 .range-controls .toggle-min {
-  left: 20px;
-  top: 37px;
+  left: 18px;
+  top: 36px;
+  width: 20px;
+  height: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 162px;
-  top: 38px;
+  left: 160px;
+  top: 35px;
+  width: 20px;
+  height: 20px;
 }
 
 .price-controls label {
@@ -1170,7 +1182,7 @@ img::after{
   outline: none;
   width: 70px;
   padding: 8px 10px;
-  margin-left: 10px;
+  margin-left: 12px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
@@ -1206,7 +1218,7 @@ img::after{
 }
 
 .company-logo img{
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .form .filter-item{
@@ -1249,7 +1261,7 @@ input[type="checkbox"]{
 }
 
 .circle label{
-  padding-left: 35px;
+  padding-left: 36px;
   position: relative;
 }
 
@@ -1456,7 +1468,7 @@ input[type="checkbox"]:disabled + label::before{
   display: block;
   position: absolute;
   bottom: 0;
-  border-radius: 4px;
+
 }
 
 input[type="text"]{
@@ -1474,7 +1486,6 @@ input[type="text"]{
   width: 360px;
   height: 40px;
   opacity: 0.12;
-  left: 0px;
 }
 
 .maket:hover::before{
@@ -1486,8 +1497,8 @@ input[type="text"]{
 }
 
 .maket:hover{
-  box-shadow: 0 0 15px 0 #34495e;
-  border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 }
 
 .modal-map .container{
