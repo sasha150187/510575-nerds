@@ -312,6 +312,7 @@ textarea{
   border: none;
   margin-top: 47px;
   font-weight: 500;
+  text-transform: uppercase;
  }
 
 .pop-up .button:link{
@@ -835,11 +836,9 @@ a:active { ... }
 }
 
 .modal-map{
-  height: 415px;
   position: relative;
-  background-image: url("../img/map.png");
+  background-image: url("../img/map-contacts.png");
   background-repeat: no-repeat;
-  background-size: 1440px 415px;
   background-position: center top;
 }
 
@@ -864,11 +863,11 @@ a:active { ... }
   min-height: 217px;
 }
 
-
-.main-footer{
+.main-footer .container{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 69px;
 }
 
 .footer-social{
@@ -913,16 +912,16 @@ a:active { ... }
 }
 
 .main-pop-up{
+  display: none;
   position: fixed;
-  bottom: 180px;
-  left: 440px;
-  margin-left: -240px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   width: 960px;
   padding: 72px 100px 84px 100px;
   box-shadow: 0  10px 40px 1px #000000;
   background-color: #ffffff;
   z-index: 3;
-  display: none;
 }
 
 .filters{
@@ -1047,9 +1046,15 @@ a:active { ... }
   padding-left: 15px;
 }
 
-.visually-hidden{
-  visibility: hidden;
+.visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list-items li{
@@ -1563,6 +1568,7 @@ input[type="text"]{
 
 .modal-map .container{
   position: relative;
+  min-height: 415px;
 }
 
 .writetous{
