@@ -310,6 +310,7 @@ textarea{
   margin-top: 12px;
   margin-bottom: 36px;
   border-radius: 3px;
+  font-family: inherit;
  }
 
  .pop-up input[type="submit"]{
@@ -607,7 +608,7 @@ input[type="text"]:invalid{
 .square input[type="submit"]{
   display: inline-block;
   padding: 17px 88px;
-  margin-top: 50px;
+  margin-top: 30px;
   border: none;
   border-radius: 3px;
   font-weight: 500;
@@ -624,6 +625,7 @@ input[type="text"]:invalid{
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  display: block;
 }
 
 .filter-type a{
@@ -643,7 +645,7 @@ input[type="text"]:invalid{
 }
 
 .filter-type li{
-  margin: 0;
+  margin-right: 28px;
   padding: 0;
 }
 
@@ -949,7 +951,7 @@ input[type="text"]:invalid{
 }
 
 .main-pop-up{
-  display: non;
+  display: none;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1022,25 +1024,13 @@ input[type="text"]:invalid{
   padding: 0;
 }
 
-
 .filter-type{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 360px;
   margin: 0;
   padding: 0;
   margin-left: auto;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
 }
 
 .arrow-asc{
@@ -1221,7 +1211,7 @@ input[type="text"]:invalid{
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 48px;
+  margin-bottom: 55px;
 }
 
 .sorting > span{
@@ -1689,6 +1679,10 @@ input[type="text"]{
   outline: none;
   margin-top: 12px;
   border-radius: 3px;
+  color: #d7dcde;
+  border: 2px solid #d7dcde;
+  font-family: inherit;
+  resize: vertical;
 }
 
 th {
