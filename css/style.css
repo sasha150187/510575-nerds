@@ -1002,11 +1002,6 @@ input[type="text"]:invalid{
   margin-bottom: 20px;
 }
 
- {
-  width: 760px;
-  min-height: 1915px;
-}
-
 .gallery{
   padding: 0;
   display: -webkit-box;
