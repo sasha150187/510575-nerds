@@ -15,10 +15,10 @@
             <img src="img/nerds-logo.png" width="160" height="65" alt="logo">
           </a>
           <ul class="navigation">
-            <li><a href="studio.html">студия</a></li>
-            <li><a href="clients.html">клиенты</a></li>
-            <li class="site-navigation-current"><a href="catalog.html">магазин</a></li>
-            <li><a href="contacts">контакты</a></li>
+            <li><a href="#">студия</a></li>
+            <li><a href="#">клиенты</a></li>
+            <li class="site-navigation-current"><a href="#">магазин</a></li>
+            <li><a href="#">контакты</a></li>
           </ul>
           <ul class="user-navigation">
             <li><a href="#" class="basket-link">корзина</a></li>
@@ -36,7 +36,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                    <div class="bar" style="margin-left: 0; width: 70%"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
@@ -49,11 +49,11 @@
             </fieldset>
             <fieldset class="circle">
               <legend>Сетка:</legend>
-              <input type="radio" class="radio" name="radio" id="adaptive" checked>
+              <input type="radio" class="radio" name="grid" id="adaptive" value="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
-              <input type="radio" class="radio" name="radio" id="fixed">
+              <input type="radio" class="radio" name="grid" id="fixed" value="fixed">
               <label for="fixed">Фиксированая</label>
-              <input type="radio" class="radio" name="radio" id="rubber" disabled>
+              <input type="radio" class="radio" name="grid" id="rubber" value="rubber" disabled>
               <label for="rubber" class="rubber">Резиновая</label>
             </fieldset>
             <fieldset class="square">
@@ -72,7 +72,7 @@
             </fieldset>
           </form>
         </section>
-        <section class="block-maket">
+        <section class="block-layout">
           <h2 class="visually-hidden">Список макетов</h2>
           <div class="sorting">
             <span>сортировать:</span>
@@ -80,63 +80,63 @@
               <li><a href="catalog" class="current">по цене</a></li>
               <li><a href="type">по типу</a></li>
               <li><a href="name">по названию</a></li>
-              <li><a href="arrow-down" class="arrow-asc"></a></li>
-              <li><a href="arrow-up" class="arrow-des"></a></li>
+              <li><a href="arrow-down" class="arrow-asc" aria-label="По возрастанию" title="По возрастанию"><span class="visually-hidden">По возрастанию</span></a></li>
+              <li><a href="arrow-up" class="arrow-des" aria-label="По убыванию" title="По убыванию"><span class="visually-hidden">По убыванию</span></a></li>
             </ul>
           </div>
-        <article class="maket">
+        <article class="layout">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona" class="sedona">
           <div class="catalog-pop-up">
-            <h2><a href="#" class="maket-link">sedona</a></h2>
+            <h2><a href="#" class="layout-link">sedona</a></h2>
             <p>Информационный сайт для туристов</p>
             <a href="basket-link" class="order-link">9 900 руб.</a>
           </div>
         </article>
-        <article class="maket">
+        <article class="layout">
           <img src="img/img-pink.jpg" width="360" height="576" alt="pink">
           <div class="catalog-pop-up">
-            <h2><a href="#" class="maket-link">pink app</a></h2>
+            <h2><a href="#" class="layout-link">pink app</a></h2>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <a href="basket-link" class="order-link">9 900 руб.</a>
           </div>
         </article>
-        <article class="maket">
+        <article class="layout">
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="barbershop">
           <div class="catalog-pop-up">
-            <h2><a href="#" class="maket-link">barbershop</a></h2>
+            <h2><a href="#" class="layout-link">barbershop</a></h2>
             <p>Сайт салоны красоты. Для мужчин, да.</p>
             <a href="basket-link" class="order-link">9 900 руб.</a>
           </div>
         </article>
-        <article class="maket">
+        <article class="layout">
           <img src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
           <div class="catalog-pop-up">
-            <h2><a href="#" class="maket-link">mishka</a></h2>
+            <h2><a href="#" class="layout-link">mishka</a></h2>
             <p>Интернет-магазин  вязаных игрушек</p>
             <a href="basket-link" class="order-link">9 900 руб.</a>
           </div>
         </article>
-        <article class="maket">
+        <article class="layout">
           <img src="img/img-aplus.jpg" width="360" height="576" alt="aplus">
           <div class="catalog-pop-up">
-            <h2><a href="#" class="maket-link">a plus</a></h2>
+            <h2><a href="#" class="layout-link">a plus</a></h2>
             <p>Лендинг курсов повышения квалификации</p>
             <a href="basket-link" class="order-link">9 900 руб.</a>
           </div>
         </article>
-        <article class="maket">
+        <article class="layout">
           <img src="img/img-kvast.jpg" width="360" height="576" alt="kvast">
           <div class="catalog-pop-up">
-            <h2><a href="#" class="maket-link">кваст</a></h2>
+            <h2><a href="#" class="layout-link">кваст</a></h2>
             <p>Промо-сайт производителя крафтового кваса</p>
             <a href="basket-link" class="order-link">9 900 руб.</a>
           </div>
         </article>
           <ul class="pagination">
-            <li class="pagination-item pagination-item-current"><a href="catalog.html">1</a></li>
-            <li class="pagination-item"><a href="catalog-1">2</a></li>
-            <li class="pagination-item"><a href="catalog-2">3</a></li>
-            <li class="pagination-item pagination-next"><a href="next">следующая</a></li>
+            <li><a href="" class="pagination-item pagination-item-current">1</a></li>
+            <li><a href="#" class="pagination-item">2</a></li>
+            <li><a href="#" class="pagination-item">3</a></li>
+            <li><a href="#" class="pagination-item pagination-next">следующая</a></li>
           </ul>
         </section>
       </div>
