@@ -823,8 +823,22 @@ input[type="text"]:invalid{
 
 .projects-list{
   border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
-  margin-bottom: 73px;
+  margin-bottom: 76px;
+  position: relative;
+}
+
+.projects-list:after{
+  content: "";
+  position: absolute;
+  background-color: #eeeeee;
+  width: 1160px;
+  height: 2px;
+  top: 180px;
+  right: 0;
+}
+
+.projects a{
+  display: block;
 }
 
 .projects{
@@ -1437,6 +1451,10 @@ input[type="radio"]:disabled + label::before{
   background-image: url("../img/radio-off.svg");
   opacity: 0.1;
   cursor: pointer;
+}
+
+input[type="radio"]:disabled + label{
+  color: #ced0d0;
 }
 
 input[type="radio"] + label::after{
