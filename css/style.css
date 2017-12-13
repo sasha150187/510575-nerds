@@ -823,6 +823,8 @@ input[type="text"]:invalid{
 
 .projects-list{
   border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 73px;
 }
 
 .projects{
@@ -832,21 +834,15 @@ input[type="text"]:invalid{
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 2px solid #eeeeee;
-  min-height: 180px;
-  margin-bottom: 80px;
   position: relative;
-}
-
-.projects{
   margin: 0;
   padding: 0;
-  margin-bottom: 73px;
 }
 
 .projects li{
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .logo-html::after{
@@ -856,7 +852,7 @@ input[type="text"]:invalid{
   height: 52px;
   background-color: #eeeeee;
   left: 279px;
-  top: 62px;
+  top: 64px;
 }
 
 .logo-barbershop::after{
@@ -865,8 +861,8 @@ input[type="text"]:invalid{
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
-  left: 579px;
-  top: 62px;
+  left: 279px;
+  top: 64px;
 }
 
 .logo-pink::after{
@@ -875,8 +871,8 @@ input[type="text"]:invalid{
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
-  right: 279px;
-  top: 62px;
+  right: -21px;
+  top: 64px;
 }
 
 .modal-map{
