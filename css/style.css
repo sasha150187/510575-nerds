@@ -30,6 +30,10 @@ a{
   text-decoration: none;
 }
 
+li{
+  list-style-type: none;
+}
+
 .main-header{
   background-color: #eeeeee;
 }
@@ -41,10 +45,6 @@ a{
   color: #000000;
   text-transform: uppercase;
 }
-
-.navigation li{
-  list-style-type: none;
-  }
 
 .slider{
   position: relative;
@@ -61,7 +61,7 @@ a{
   vertical-align: top;
 }
 
-i{
+.slider-controls i{
   position: relative;
 }
 
@@ -73,7 +73,8 @@ i{
 .slider-controls .active::before{
 content: "";
 position: absolute;
-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
 left: 50%;
 top: 50%;
 z-index: 2;
@@ -230,7 +231,7 @@ border-radius: 50%;
 }
 
 
-th{
+.stats th{
   font-weight: bold;
   font-size: 45px;
   line-height: 50px;
@@ -238,7 +239,7 @@ th{
   padding-bottom: 14px;
 }
 
-td{
+.stats td{
   font-size: 16px;
   line-height: 18px;
   padding-right: 22px;
@@ -300,7 +301,6 @@ td{
   padding: 0;
   margin-bottom: 40px;
 }
-
 
 textarea{
   color: #d7dcde;
@@ -743,7 +743,8 @@ input[type="text"]:invalid{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 560px;
@@ -805,18 +806,18 @@ input[type="text"]:invalid{
 }
 
 .main-menu-item{
-  width: 300px;
-  min-height: 350px;
+  min-width: 300px;
+  margin-right: 100px;
+}
+
+.main-menu-item:last-child{
+  margin-right: 0;
 }
 
 .menu-list{
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 1100px;
 }
 
 .projects{
@@ -1021,7 +1022,6 @@ input[type="text"]:invalid{
   display: none;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -1218,7 +1218,7 @@ input[type="text"]:invalid{
 }
 
 .container{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -1701,9 +1701,6 @@ input[type="text"]{
   height: 40px;
   position: absolute;
   opacity: 1;
-  border: 1px solid red;
-  border-bottom: none;
-  box-sizing: border-box;
 }
 
 .layout:hover{
@@ -1759,13 +1756,13 @@ input[type="text"]{
   resize: vertical;
 }
 
-th {
+.stats th{
   position: relative;
   padding-right: 24px;
   text-align: start;
 }
 
-sup{
+.percent{
   position: absolute;
   width: 22px;
   height: 22px;
@@ -1784,38 +1781,28 @@ sup{
 .web,
 .apps,
 .presentations{
-  width: 250px;
-  display: block;
   position: relative;
   padding-top: 170px;
 }
 
-.web::before{
-  content: "";
-  position: absolute;
+.web{
   background-image: url("../img/illustration-1.jpg");
   background-repeat: no-repeat;
-  width: 300px;
-  height: 146px;
-  top: 0;
+  -webkit-background-size: 300px 146px;
+  background-size: 300px 146px;
 }
 
-.apps::before{
-  content: "";
-  position: absolute;
+.apps{
   background-image: url("../img/illustration-2.jpg");
   background-repeat: no-repeat;
-  width: 300px;
-  height: 146px;
-  top: 0;
+  -webkit-background-size: 300px 146px;
+  background-size: 300px 146px;
 }
 
-.presentations::before{
-  content: "";
-  position: absolute;
+
+.presentations{
   background-image: url("../img/illustration-3.jpg");
   background-repeat: no-repeat;
-  width: 300px;
-  height: 146px;
-  top: 0;
+  -webkit-background-size: 300px 146px;
+  background-size: 300px 146px;
 }
