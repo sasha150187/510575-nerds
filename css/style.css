@@ -179,6 +179,7 @@ border-radius: 50%;
 
 .main-menu-item p{
   margin-bottom: 32px;
+  width: 250px;
 }
 
 .main-menu-order-1{
@@ -802,7 +803,7 @@ input[type="text"]:invalid{
 .menu-list{
   margin: 0;
   padding: 0;
-  margin-bottom: 77px;
+  margin-bottom: 80px;
 }
 
 .main-menu-item{
@@ -820,6 +821,10 @@ input[type="text"]:invalid{
   display:flex;
 }
 
+.projects-list{
+  border-top: 2px solid #eeeeee;
+}
+
 .projects{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -827,7 +832,6 @@ input[type="text"]:invalid{
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   min-height: 180px;
   margin-bottom: 80px;
@@ -837,12 +841,7 @@ input[type="text"]:invalid{
 .projects{
   margin: 0;
   padding: 0;
-  margin-bottom: 83px;
-}
-
-.projects a{
-  width: 260px;
-  height: 180px;
+  margin-bottom: 73px;
 }
 
 .projects li{
@@ -850,54 +849,7 @@ input[type="text"]:invalid{
   padding: 0;
 }
 
-.html::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  background-image: url("../img/logo-1.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 260px;
-  height: 180px;
-  left: -1px;
-  top: -2px;
-
-}
-
-.barbershop::after{
-  content: "";
-  position: absolute;
-  left: 297px;
-  top: -2px;
-  background-image: url("../img/logo-2.png");
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 180px;
-}
-
-.pink::after{
-  content: "";
-  position: absolute;
-  background-image: url("../img/logo-3.png");
-  background-repeat: no-repeat;
-  right: 299px;
-  top: -2px;
-  width: 260px;
-  height: 180px;
-}
-
-.mishka::after{
-  content: "";
-  position: absolute;
-  background-image: url("../img/logo-4.png");
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 180px;
-  right: -1px;
-  top: -2px;
-}
-
-.projects .logo-html::after{
+.logo-html::after{
   content: "";
   position: absolute;
   width: 2px;
@@ -907,7 +859,7 @@ input[type="text"]:invalid{
   top: 62px;
 }
 
-.projects .logo-barbershop::after{
+.logo-barbershop::after{
   content: "";
   position: absolute;
   width: 2px;
@@ -917,7 +869,7 @@ input[type="text"]:invalid{
   top: 62px;
 }
 
-.projects .logo-pink::after{
+.logo-pink::after{
   content: "";
   position: absolute;
   width: 2px;
@@ -1404,8 +1356,8 @@ input[type="text"]:invalid{
 }
 
 .about-us{
-  padding-top: 37px;
-  margin-bottom: 34px;
+  padding-top: 38px;
+  margin-bottom: 32px;
 }
 
 .left-column{
